@@ -8,7 +8,7 @@ RSpec.configure do |config|
       FactoryGirl.lint
       DatabaseCleaner.clean_with(:truncation)
     rescue => e
-      STDERR.puts "Error checking FactoryGirl factories!"
+      STDERR.puts 'Error checking FactoryGirl factories!'
       STDERR.puts e.to_s
       exit 1
     end

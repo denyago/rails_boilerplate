@@ -1,0 +1,64 @@
+#inherit_from:
+#  - .rubocop_todo.yml
+
+AllCops:
+  TargetRubyVersion: 2.2
+  ExtraDetails: true
+  DisplayCopNames: true
+  DisplayStyleGuide: true
+
+Rails:
+  Enabled: true
+
+# Configuration parameters: AllowHeredoc, AllowURI, URISchemes.
+# URISchemes: http, https
+Metrics/LineLength:
+  Enabled: false
+
+# Configuration parameters: CountComments.
+Metrics/ClassLength:
+  Enabled: false
+
+# Configuration parameters: CountComments.
+Metrics/MethodLength:
+  Enabled: false
+
+Metrics/AbcSize:
+  Enabled: false
+
+Metrics/CyclomaticComplexity:
+  Enabled: false
+
+Metrics/PerceivedComplexity:
+  Enabled: false
+
+Style/Documentation:
+  Enabled: false
+
+# Configuration parameters: CountKeywordArgs.
+Metrics/ParameterLists:
+  Max: 5
+  CountKeywordArgs: false
+
+# Cop supports --auto-correct.
+# Configuration parameters: EnforcedStyle, SupportedStyles.
+# SupportedStyles: leading, trailing
+Style/DotPosition:
+  EnforcedStyle: trailing
+
+# Cop supports --auto-correct.
+# Configuration parameters: AllowForAlignment, ForceEqualSignAlignment.
+Style/ExtraSpacing:
+  AllowForAlignment: true
+  ForceEqualSignAlignment: false
+
+# Cop supports --auto-correct.
+# Configuration parameters: EnforcedStyle, SupportedStyles, IndentationWidth.
+# SupportedStyles: aligned, indented
+Style/MultilineMethodCallIndentation:
+  EnforcedStyle: aligned
+
+# Configuration parameters: EnforcedStyle, SupportedStyles.
+# SupportedStyles: nested, compact
+Style/ClassAndModuleChildren:
+  Enabled: false
